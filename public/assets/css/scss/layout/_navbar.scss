@@ -1,0 +1,155 @@
+/*--------------------------------------------------------------
+# Start nav-menu
+--------------------------------------------------------------*/
+
+.nav-menu {
+    padding: 15px 0;
+    .logo {
+        img {
+            width: 200px;
+        }
+    }
+    .search-div {
+        .search_input {
+            position: relative;
+            display: flex;
+            border: 1px solid rgba(112, 112, 112, 0.2);
+            border-radius: 50px;
+            padding: 3px 10px;
+            overflow: hidden;
+            .form-control,
+            select {
+                border: 0;
+                box-shadow: none;
+            }
+            select {
+                color: #171616;
+            }
+            .form-control {
+                border-inline-start: 1px solid rgba(112, 112, 112, 0.2);
+                border-radius: 0;
+                margin-inline-start: 10px;
+                &::placeholder {
+                    color: rgba($color: #3D3D3D, $alpha: 0.31);
+                    font-size: 14px;
+                }
+            }
+            .icon-search {
+                color: #fff;
+                position: absolute;
+                left: 3px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                background: $mainColor;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                &:hover {
+                    background-color: $secColor;
+                }
+            }
+        }
+    }
+    .additionals {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .dropdown {
+            display: inline-block;
+            margin-inline-end: -4px;
+            .dropdown-toggle {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $mainColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                i {
+                    margin: 0;
+                }
+                &:after {
+                    display: none;
+                }
+                &:hover {
+                    background-color: $mainColor;
+                    color: #fff;
+                }
+            }
+            .dropdown-menu {
+                padding: 0;
+                border: 0;
+                border-radius: 7px;
+                box-shadow: 0 3px 6px rgb(0 0 0 / 8%);
+                text-align: start;
+                overflow: hidden;
+                .dropdown-item {
+                    border-bottom: 1px solid #F5F5F5;
+                    padding: 8px 15px;
+                    display: flex;
+                    align-items: center;
+                    color: $mainColor;
+                    i {
+                        margin-inline-end: 10px;
+                    }
+                    &:hover,
+                    &:focus {
+                        background-color: $mainColor;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .icon {
+            color: #3D3D3D;
+            position: relative;
+            font-size: 19px;
+            margin-inline-start: 30px;
+            .num {
+                position: absolute;
+                top: -8px;
+                left: -7px;
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                font-size: 11px;
+                color: #fff;
+                background-color: #EE5F1D;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media(max-width:991.98px) {
+    .nav-menu .logo img {
+        width: 150px;
+    }
+}
+
+@media(max-width:767.98px) {
+    .nav-menu {
+        .logo {
+            text-align: center;
+        }
+        .search-div {
+            margin: 15px 0;
+        }
+        .additionals {
+            justify-content: center;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End nav-menu
+--------------------------------------------------------------*/

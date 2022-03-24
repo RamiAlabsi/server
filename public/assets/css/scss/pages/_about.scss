@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+# Start about page
+--------------------------------------------------------------*/
+
+.about_page {
+    padding: 60px 0;
+    .info {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h4 {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            color: $mainColor;
+            display: inline-block;
+            font-weight: 700;
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: 50%;
+                left: -45px;
+                background-color: #0E0E0E;
+                width: 35px;
+                height: 2px;
+            }
+        }
+        p {
+            line-height: 27px;
+            color: #707070;
+            font-size: 14px;
+        }
+    }
+    .image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .box_2 {
+        margin-top: 100px;
+    }
+    ul {
+        list-style-type: disc;
+        padding-inline-start: 20px;
+        li {
+            margin-bottom: 10px;
+            color: #707070;
+            font-size: 14px;
+            &::marker {
+                content: "⦾ ";
+                margin-inline-end: 10px;
+                color: $mainColor;
+            }
+        }
+    }
+    .box_3 {
+        margin-top: 100px;
+        .item {
+            box-shadow: 0 3px 15px rgba($color: #000000, $alpha: 0.16);
+            text-align: center;
+            padding: 0 25px 25px;
+            .icon {
+                width: 75px;
+                height: 75px;
+                background: $mainColor;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin: 0 auto;
+                transform: translateY(-50%);
+                font-size: 27px;
+                border: 5px solid rgba(255, 140, 87, 1);
+            }
+            .meta {
+                margin-top: -20px;
+                h6 {
+                    color: $mainColor;
+                    font-weight: 900;
+                    font-size: 18px;
+                }
+                p {
+                    color: #707070;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:991.98px) {
+    .about_page {
+        .info {
+            margin-bottom: 30px;
+        }
+        .o-2 {
+            order: 2;
+            margin-top: 30px;
+        }
+    }
+    .about_page .box_3 .item {
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width:575.98px) {
+    .about_page .info {
+        font-size: 15px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End about page
+--------------------------------------------------------------*/

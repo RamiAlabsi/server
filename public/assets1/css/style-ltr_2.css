@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+# Start Global Page
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+    direction: ltr;
+    font-family: Roboto;
+}
+
+label {
+    margin-left: 2px;
+}
+
+
+/*--------------------------------------------------------------
+# End Global Page
+--------------------------------------------------------------*/
+
+.line-after {
+    padding: 10px 15px 10px 0;
+    margin-right: 13px;
+    margin-left: 0;
+}
+
+.line-after:before {
+    right: 0;
+    left: unset;
+}
+
+.nav-top .setting-site .switch-lang .dropdown-list {
+    right: 0;
+    left: unset;
+}
+
+.nav-menu .sochial .toggle-menu {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.search-box .icon-search {
+    right: 0;
+    left: unset;
+}
+
+.search-box .icon-search:after {
+    left: -6px;
+    right: unset;
+}
+
+.all-stores .head i {
+    margin-left: 0;
+    margin-right: 12px;
+}
+
+.footer .head-footer h5:after {
+    left: 0;
+    right: unset;
+}
+
+.copyright .copy p a {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.mobile-menu {
+    right: -100%;
+    left: unset;
+}
+
+.mobile-menu.show {
+    left: unset;
+    right: 0;
+}
+
+.mobile-menu .list-side li a:before {
+    left: 0;
+    right: unset;
+}
+
+.mobile-menu .list-side .drop-side i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.products-page .side-card .head-card img {
+    margin-right: 12px;
+    margin-left: 0;
+}
+
+.products-page .side-card .contact-card .item a i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.products-page .side-card .footer-card .btn i {
+    left: 22px;
+    right: unset;
+}
+
+.custome-checkbox .form-check-label::before {
+    margin: 0px 8px 0 0;
+}
+
+body {
+    direction: ltr;
+}
+
+.chat-page .side-section {
+    border-right: 1px solid #ccc;
+    border-left: 0;
+}
+
+.chat-page .side-section .chat-items .chat-single .image {
+    margin-right: 13px;
+    margin-left: 0;
+}
+
+.chat-page .details span {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.chat-page .details span i {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.chat-page .side-section .chat-items .btn i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.chat-page .chat-body .chat-section .block-message .info-message {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.chat-page .chat-body .chat-section .block-message.reseve-message .info-message .details {
+    float: right;
+}
+
+.chat-page .chat-body .chat-section .block-message.reseve-message {
+    float: right;
+}
+
+.chat-page .chat-body .chat-section .block-message.send-message {
+    float: left;
+}
+
+.chat-page .chat-body .chat-section .block-message.send-message .info-message .details {
+    float: left;
+}
+
+.chat-page .chat-body .chat-section .block-message .info-message .message .uploaded-file .meta {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+.chat-page .chat-body .chat-section .block-message .info-message .message .uploaded-file .action {
+    margin-left: auto;
+    margin-right: 0;
+}

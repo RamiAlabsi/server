@@ -1,0 +1,672 @@
+/*--------------------------------------------------------------
+# Start banner Section
+--------------------------------------------------------------*/
+
+.banner_section {
+    .item_bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        direction: rtl;
+    }
+    .owl-item {
+        .banner_slide_content {
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 1;
+            padding: 30px;
+            h2 {
+                font-size: 50px;
+                margin-bottom: 20px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+            h5,
+            h2,
+            a {
+                @include start_slideInRight;
+            }
+        }
+        &.active {
+            .banner_slide_content {
+                h5,
+                h2,
+                a {
+                    @include animation_slideInRight;
+                }
+            }
+        }
+    }
+    .banner_discount {
+        display: flex;
+        flex-wrap: wrap;
+        .box {
+            padding: 0;
+            .item {
+                position: relative;
+                background-image: url(../img/img.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 225px;
+                .info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 10px;
+                    background-color: rgba(225 225 225 / 76%);
+                    h5 {
+                        font-size: 16px;
+                    }
+                    h3 {
+                        position: relative;
+                        font-size: 24px;
+                        font-weight: 700;
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            bottom: -7px;
+                            right: 0;
+                            width: 60px;
+                            height: 3px;
+                            border-radius: 50px;
+                            background-color: $mainColor;
+                        }
+                    }
+                }
+            }
+            &:last-of-type {
+                margin-top: 30px;
+                .info {
+                    background-color: rgba($color: $mainColor, $alpha: 0.6);
+                    h3 {
+                        color: #fff;
+                        &:after {
+                            background-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .box {
+            flex: 33.333%;
+            max-width: 33.333%;
+            padding: 0 7px;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #C5BDBD;
+                padding: 13px;
+                color: #212121;
+                font-size: 14px;
+                transition: .3s;
+                i {
+                    color: $mainColor;
+                    font-size: 20px;
+                    margin-inline-end: 10px;
+                }
+                &:hover {
+                    background-color: #212121;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px) {
+    .banner_section {
+        .offset-lg-3 {
+            margin-right: 25%;
+            margin-left: 0;
+        }
+    }
+}
+
+@media(max-width:1199.98px) {
+    .banner_section .owl-item .banner_slide_content h2 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:991.98px) {
+    .banner_section .owl-item .banner_slide_content h2 {
+        font-size: 44px;
+    }
+    .banner_section .banner_discount .box:last-of-type {
+        margin-top: 0;
+    }
+    .banner_section .banner_discount {
+        margin-top: 35px;
+    }
+    .banner_section .banner_discount .box {
+        padding: 0 7px;
+    }
+}
+
+@media(max-width:575.98px) {
+    .banner_section .owl-item .banner_slide_content h5 {
+        font-size: 16px;
+    }
+    .banner_section .owl-item .banner_slide_content h2 {
+        font-size: 28px;
+    }
+    .banner_section .owl-item .banner_slide_content a {
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+    .banner_section .banner_discount .box {
+        padding: 0;
+        margin: 10px 0;
+    }
+    .banner_section .features .box {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .banner_section .banner_discount {
+        margin-top: 0px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # End banner Section
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Start elec_products Section
+--------------------------------------------------------------*/
+
+.elec_products {
+    margin-top: 70px;
+    .products-content {
+        .box {
+            text-align: center;
+            display: block;
+            .title {
+                background: #000000;
+                color: #fff;
+                padding: 15px 5px;
+                transition: .3s;
+                h5 {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+            }
+            &:hover {
+                .title {
+                    background: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+.side_banner {
+    height: 100%;
+    @media(max-width: 767.98px) {
+        display: none;
+    }
+    .image {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        .info {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            padding: 0 20px;
+            transform: translateY(-50%);
+            z-index: 1;
+            p {
+                margin-bottom: 5px;
+                background: rgba(225 225 225 / 60%);
+                display: inline-block;
+                padding: 0 10px;
+            }
+            span {
+                display: block;
+                font-weight: 900;
+                color: #fff;
+            }
+            .main-btn {
+                border-radius: 50px;
+                padding: 6px 20px;
+                margin-top: 10px;
+                font-size: 13px;
+            }
+        }
+        &:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 80%;
+            top: 50%;
+            transform: translate(40%, -50%);
+            border: 11px solid rgba(238 95 29 / 25%);
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.2);
+        }
+    }
+}
+
+@media(max-width:991.98px) {
+    .side_banner {
+        height: auto;
+    }
+    .side_banner .image img {
+        height: 265px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # End elec_products Section
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Start fixed prices
+--------------------------------------------------------------*/
+
+.fixed_prices {
+    margin-top: 30px;
+    .box {
+        height: 300px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        .info {
+            padding: 0 50px;
+            text-align: center;
+            h3 {
+                color: #fff;
+                font-size: 40px;
+            }
+            p {
+                font-size: 18px;
+                span {
+                    color: #fff;
+                    font-size: 58px;
+                    font-weight: 900;
+                    text-shadow: 0px 4px 0px $mainColor;
+                    margin-inline-end: 7px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:991.98px) {
+    .fixed_prices .box {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:575.98px) {
+    .fixed_prices .box {
+        position: relative;
+        display: grid;
+        &:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.2);
+            z-index: 1;
+        }
+        .info {
+            position: relative;
+            z-index: 2;
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # End fixed prices
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Start our picks
+--------------------------------------------------------------*/
+
+.our_picks {
+    margin-top: 30px;
+    .side_banner {
+        height: 100%;
+        .image img {
+            height: 100%;
+        }
+    }
+    .products-content {
+        .item {
+            padding: 0 7px;
+            .box-product {
+                direction: rtl;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # End our picks
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Start discount_banners
+--------------------------------------------------------------*/
+
+.discount_banners {
+    margin-top: 60px;
+    .box {
+        position: relative;
+        img {
+            height: 205px;
+        }
+        .info {
+            position: absolute;
+            bottom: 25px;
+            padding: 0 20px;
+            p {
+                margin-bottom: 10px;
+                span {
+                    color: $mainColor;
+                    font-weight: 900;
+                }
+            }
+            h5 {
+                font-size: 18px;
+            }
+            .big {
+                font-size: 33px;
+                display: block;
+                font-weight: 900;
+                margin-top: -5px;
+                margin-bottom: 10px;
+            }
+            .main-btn {
+                padding: 6px 20px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media(max-width:1199.98px) {
+    .discount_banners .last {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .discount_banners .box img {
+        width: 100%;
+    }
+}
+
+@media(max-width:991.98px) {
+    .discount_banners .col-xl-4 {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # Start discount_banners
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Start most sell
+--------------------------------------------------------------*/
+
+.most_sell {
+    .modern_products {
+        .box {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba($color: #707070, $alpha: 0.16);
+            margin-bottom: 20px;
+            img {
+                width: 100px;
+                margin-inline-end: 7px;
+            }
+            .info {
+                h6 {
+                    color: #535050;
+                }
+                .price {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # End most sell
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Start discount Section
+--------------------------------------------------------------*/
+
+.discount_section {
+    margin-top: 40px;
+    .row>.col-lg-3 {
+        display: flex;
+        justify-content: center;
+    }
+    .box {
+        position: relative;
+        display: block;
+        &:after {
+            position: absolute;
+            content: "";
+            background-color: rgba(255, 255, 255, 0.74);
+            bottom: -65%;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            transition: .3s;
+        }
+        .info {
+            padding: 20px 20px 30px;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            transition: .3s;
+            span {
+                font-size: 27px;
+                position: relative;
+                display: block;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    bottom: -7px;
+                    right: 0;
+                    height: 5px;
+                    width: 60px;
+                    background-color: $mainColor;
+                    border-radius: 50px;
+                }
+            }
+        }
+        &:hover {
+            &:after {
+                bottom: 0;
+            }
+            .info {
+                bottom: 50%;
+                transform: translateY(50%);
+            }
+        }
+    }
+}
+
+@media(max-width:991.98px) {
+    .discount_section .box {
+        margin-bottom: 30px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # End discount Section
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Start categories Section
+--------------------------------------------------------------*/
+
+.categories_section {
+    margin-top: 60px;
+    .box {
+        text-align: center;
+        transition: .3s;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        display: block;
+        img {
+            height: 226px;
+        }
+        h5 {
+            font-size: 16px;
+            padding: 10px;
+        }
+        &:hover {
+            box-shadow: 0px 10px 25px rgba($color: #000000, $alpha: 0.08);
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # End categories Section
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Start news letter
+--------------------------------------------------------------*/
+
+.news_letter {
+    background-image: url(../img/news_letter.png);
+    background-size: cover;
+    padding: 70px 0;
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #EBEBEB, $alpha: 0.29);
+    }
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+    .text {
+        p {
+            color: #212121;
+            font-size: 20px;
+            font-weight: 900;
+        }
+    }
+    form {
+        input[type=email] {
+            background: #fff;
+            border: 0;
+            padding: 10px;
+            border-radius: 50px;
+            width: 70%;
+            margin-inline-end: 10px;
+            outline: none;
+            border: 1px solid transparent;
+            transition: .3s;
+            &:hover,
+            &:focus {
+                border: 1px solid $mainColor;
+            }
+            &::placeholder {
+                color: #989898;
+                font-size: 13px;
+            }
+        }
+        .main-btn {
+            width: 27%;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width:991.98px) {
+    .news_letter .text {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:575.98px) {
+    .news_letter form input[type=email] {
+        width: 100%;
+        margin-inline-end: 0;
+        margin-bottom: 12px;
+    }
+    .news_letter form .main-btn {
+        width: auto;
+        margin: 0 auto;
+        display: table;
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # End news letter
+--------------------------------------------------------------*/

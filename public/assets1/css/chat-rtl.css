@@ -1,0 +1,19 @@
+body {
+    direction: rtl;
+}
+
+.right-msg .msg-img {
+    margin: 0 10px 0 0;
+}
+
+.msg-img {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.msger-send-btn,
+.msger .file-btn,
+.msger .img-btn {
+    margin-right: 10px;
+    margin-left: 0;
+}

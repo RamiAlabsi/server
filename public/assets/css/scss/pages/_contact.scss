@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+# Start about page
+--------------------------------------------------------------*/
+
+.contact_page {
+    padding: 60px 0;
+    .intro {
+        text-align: center;
+        h6 {
+            color: $mainColor;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #707070;
+            font-size: 14px;
+        }
+    }
+    .contact_info {
+        margin-top: 50px;
+        .box {
+            box-shadow: 0px 3px 26px rgba($color: #F8F8F8, $alpha: 0.92);
+            text-align: center;
+            padding: 25px;
+            color: #707070;
+            margin-bottom: 30px;
+            .icon {
+                width: 70px;
+                height: 70px;
+                border: 1px solid #A5A5A5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin: 0 auto;
+                font-size: 25px;
+                color: $mainColor;
+                transition: .3s;
+            }
+            h6 {
+                margin-top: 13px;
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 15px;
+            }
+            &:hover {
+                box-shadow: 0 3px 26px rgba($color: #FFF6F2, $alpha: 1.0);
+                .icon {
+                    background-color: $mainColor;
+                    color: #fff;
+                    border: 1px solid $mainColor;
+                }
+            }
+        }
+    }
+    .modal_form {
+        margin-top: 30px;
+        .form-control {
+            border: 1px solid #707070;
+            border-radius: 0;
+            box-shadow: none;
+            &:focus,
+            &:hover {
+                border: 1px solid $mainColor;
+            }
+            &::placeholder {
+                color: #707070;
+            }
+        }
+        textarea {
+            height: 200px;
+            resize: none;
+        }
+    }
+    .map {
+        margin-top: 50px;
+        iframe {
+            height: 300px;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End about page
+--------------------------------------------------------------*/

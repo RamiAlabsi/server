@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+# Start box product
+--------------------------------------------------------------*/
+
+.box-product {
+    position: relative;
+    border: 1px solid rgba($color: #707070, $alpha: 0.16);
+    padding: 10px;
+    transition: .3s;
+    .image {
+        text-align: center;
+        img {
+            height: 189px;
+        }
+    }
+    .info {
+        .seller {
+            margin: 15px 0;
+            color: $mainColor;
+            font-size: 14px;
+        }
+        p {
+            color: #707070;
+            font-size: 13px;
+            margin: 0;
+        }
+        .details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+    }
+    .state {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: #11BE83;
+        color: #fff;
+        padding: 5px 12px;
+        text-align: center;
+    }
+    .icons {
+        position: absolute;
+        right: 5px;
+        top: 4px;
+        transform: translateY(-60px);
+        opacity: 0;
+        transition: .4s;
+        a {
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba($color: #959191, $alpha: 0.16);
+            &:hover {
+                background-color: $mainColor;
+                color: #fff;
+            }
+        }
+    }
+    &:hover {
+        border: 1px solid $mainColor;
+        .icons {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End box product
+--------------------------------------------------------------*/

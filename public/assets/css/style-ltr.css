@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+# Start Global Page
+--------------------------------------------------------------*/
+
+body {
+    direction: ltr;
+}
+
+.navtop .settings .country .drop-countries {
+    right: unset;
+    left: 0;
+}
+
+.nav-menu .search-div .search_input .icon-search {
+    left: unset;
+    right: 3px;
+}
+
+.nav-menu .additionals .icon .num {
+    right: -7px;
+    left: unset;
+}
+
+.navbar .navbar-nav>li>.nav-link:after {
+    transform: rotate( 270deg) translateY(5px);
+}
+
+.bottom_header .dropdown-toggle::after,
+.bottom_header .dropdown-toggler::after {
+    margin-left: 5px;
+}
+
+.dropdown-menu .dropdown-toggler::after {
+    left: auto;
+    right: 15px;
+    transform: rotate( 180deg);
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar .navbar-nav .dropdown-menu.dropdown-reverse .dropdown-menu {
+        left: 100%;
+        right: auto;
+    }
+}
+
+#navCatContent ul li .dropdown-menu {
+    left: 100%;
+    right: auto;
+}
+
+.more_categories:before {
+    left: auto;
+    right: 15px;
+}
+
+#navCatContent li a.dropdown-toggler::after {
+    left: auto;
+    right: 15px;
+    transform: rotate( 180deg);
+}
+
+.banne_info a:before {
+    left: 0;
+    right: auto;
+}
+
+@media (min-width: 992px) {
+    .banner_section .offset-lg-3 {
+        margin-left: 25%;
+        margin-right: 0;
+    }
+}
+
+.navbar-toggler {
+    float: right;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-collapse.mobile_side_menu.show {
+        left: auto;
+        right: 0;
+    }
+    .navbar-collapse.mobile_side_menu {
+        left: auto;
+        right: -280px;
+    }
+    .bottom_header #navCatContent {
+        left: -270px;
+        right: auto;
+    }
+    .bottom_header #navCatContent.show {
+        left: 0;
+    }
+}
+
+@media (max-width:991.98px) {
+    #navCatContent ul li .dropdown-menu {
+        left: 0;
+        right: auto;
+    }
+}
+
+.main-heading h4:after {
+    left: 0;
+    right: auto;
+}
+
+.side_banner .image:before {
+    transform: translate(-40%, -50%);
+}
+
+.fixed_prices .box {
+    justify-content: flex-end;
+}
+
+.our_picks .products-content .item .box {
+    direction: ltr;
+}
+
+.discount_banners .box .info {
+    right: 0;
+}
+
+
+/*--------------------------------------------------------------
+# End Global Page
+--------------------------------------------------------------*/

@@ -1,0 +1,51 @@
+- when should I show the popup trailer image and when should I show it also how to give control to the admin to change it's shape
+- get the update info button back in the cart page, and save the quantity
+- make a translation for the attribute types to show them in the admin page
+- when you finish the project, truncate all data in the database and run migrations again with fixing all the problems that will arise
+- TODO: change the attribute ID's in all orders after you update this id to a new one (AttributeController)
+- Remove the uses in the web routes or any other into using namespaces
+- make a separate file for admin routes
+- how to write the parent category in the categories index
+- when you delete a user, delete the stores attached to him
+- handle the products when deleting one of its categories
+- handle the products when deleting one of its stores
+- add the stores of the product in the product show page
+- fix the vendor main page and admin main page
+- reactivate the hasStore middleware
+- fix the model of the admin categories control
+- make a remove button option in the add products page
+- add discount rate to the products vendor page
+- make a control for the admin to make any user a vendor
+- make a page for the vendors to register and send a request to the vendor
+- make the website with multiple currencies
+- when deleting a product or updating one, remove them from the cart of all users
+- add an option to refill a product
+- add an option to change the discount of a product
+- in the search, you may conduct the same record twice, as you search in multiple languages
+- delete the image after anything with images is deleted or changed
+- enable a vendor to add collaborators to his store
+- rating isn't working in all the website
+
+things to make before handing the website:
+- make vendor panel and admin panel home pages real
+
+Bugs:
+- leaving the categories select empty does nothing in the vendor/add_product
+
+required frontend edits:
+0. layout
+- make email verification bar
+1. products/create
+	- fix the categories styling
+	- fix the image input styling
+2. layout
+	- ltr header isn't working properly
+	- make a number under the cart icon in the page header
+3. index page
+	- the slider in the main page isn't working in arabic language
+
+missing pages:
+0. order details page
+1. favourites page
+2. checkout page
+3. chatting page between the customer and the vendor

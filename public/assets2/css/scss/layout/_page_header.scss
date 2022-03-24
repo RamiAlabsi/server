@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Start Page header
+--------------------------------------------------------------*/
+
+.page_header {
+    position: relative;
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.36);
+    }
+    .info {
+        position: relative;
+        z-index: 1;
+        font-size: 30px;
+        a {
+            color: #fff;
+            font-weight: 700;
+            &.active,
+            &:hover {
+                color: $mainColor;
+            }
+        }
+        .break {
+            color: #fff;
+            margin: 0 7px;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Page header
+--------------------------------------------------------------*/

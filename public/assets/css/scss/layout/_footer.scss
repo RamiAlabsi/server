@@ -1,0 +1,192 @@
+/*--------------------------------------------------------------
+# Start footer top
+--------------------------------------------------------------*/
+
+.footer {
+    background-color: #212121;
+    padding-top: 50px;
+    .site_info {
+        max-width: 32%;
+        flex: 32%;
+        padding: 0 15px;
+        .logo {
+            img {
+                width: 200px;
+            }
+        }
+        p {
+            color: #D4D4D4;
+            font-size: 14px;
+            padding: 20px 0;
+            margin-bottom: 0;
+        }
+        .con {
+            .item {
+                display: inline-block;
+                color: #fff;
+                font-size: 14px;
+                &:first-of-type {
+                    margin-inline-end: 15px;
+                }
+                i {
+                    color: $mainColor;
+                    margin-inline-end: 5px;
+                }
+            }
+        }
+    }
+    .head {
+        color: $mainColor;
+    }
+    .site_map {
+        max-width: 32%;
+        flex: 32%;
+        padding: 0 15px;
+        background-image: url(../img/map.png);
+        background-size: cover;
+        .list {
+            margin-top: 10px;
+            li {
+                margin-bottom: 5px;
+                a {
+                    color: #D4D4D4;
+                    font-size: 15px;
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .location {
+        flex: 20%;
+        max-width: 20%;
+        padding: 0 15px;
+        .map {
+            margin-top: 20px;
+            iframe {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    .apps {
+        max-width: 16%;
+        flex: 16%;
+        padding: 0 15px;
+        .images {
+            margin-top: 20px;
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        .sochial {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+                color: #fff;
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End footer top
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Start Copy Right
+--------------------------------------------------------------*/
+
+.copyright {
+    margin-top: 50px;
+    border-top: 1px solid rgba($color: #707070, $alpha: 0.27);
+    .copy {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .image {
+        text-align: end;
+    }
+}
+
+@media(max-width:1199.98px) {
+    .footer {
+        .site_info,
+        .site_map,
+        .location,
+        .apps {
+            max-width: 50%;
+            flex: 50%;
+            margin-bottom: 50px;
+        }
+        .apps .images {
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 50%;
+                margin-bottom: 10px;
+                &:first-of-type {
+                    padding-inline-end: 10px;
+                }
+            }
+        }
+    }
+    .copyright {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:767.98px) {
+    .footer {
+        .site_info,
+        .site_map {
+            max-width: 100%;
+            flex: 100%;
+        }
+    }
+}
+
+@media(max-width:575.98px) {
+    .footer {
+        .location,
+        .apps {
+            max-width: 100%;
+            flex: 100%;
+        }
+        .site_map {
+            .single_list {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .copyright {
+        padding-bottom: 30px;
+        .copy {
+            order: 2;
+            justify-content: center;
+        }
+        .image {
+            text-align: center;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# End Copy Right
+--------------------------------------------------------------*/
